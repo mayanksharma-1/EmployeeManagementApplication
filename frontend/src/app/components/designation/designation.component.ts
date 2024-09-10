@@ -16,7 +16,7 @@ export class DesignationComponent implements OnInit {
       this.getAllDesignations();
   }
   getAllDesignations(){
-    this.http.get("https://freeapi.miniprojectideas.com/api/ClientStrive/GetAllDesignation")
+    this.http.get("http://localhost:3000/api/designations")
     .subscribe((res:any)=>{
       this.designationList = res.data;
     })

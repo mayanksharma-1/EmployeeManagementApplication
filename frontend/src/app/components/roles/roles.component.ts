@@ -22,7 +22,7 @@ export class RolesComponent implements OnInit {
     this.getAllRoles();
   }
   getAllRoles(){
-      this.http.get("https://freeapi.miniprojectideas.com/api/ClientStrive/GetAllRoles")
+      this.http.get("http://localhost:3000/api/roles")
       .subscribe((res:any)=>{
         this.roleList = res.data;
       })
