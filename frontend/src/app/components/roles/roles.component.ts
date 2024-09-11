@@ -22,7 +22,7 @@ export class RolesComponent implements OnInit {
     this.getAllRoles();
   }
   getAllRoles(){
-      this.http.get("http://localhost:3000/api/roles")
+      this.http.get("https://employee-management-api-4wry.onrender.com/api/roles")
       .subscribe((res:any)=>{
         this.roleList = res.data;
       })

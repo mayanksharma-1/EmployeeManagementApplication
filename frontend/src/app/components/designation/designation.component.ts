@@ -16,7 +16,7 @@ export class DesignationComponent implements OnInit {
       this.getAllDesignations();
   }
   getAllDesignations(){
-    this.http.get("http://localhost:3000/api/designations")
+    this.http.get("https://employee-management-api-4wry.onrender.com/api/designations")
     .subscribe((res:any)=>{
       this.designationList = res.data;
     })
